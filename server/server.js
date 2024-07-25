@@ -8,7 +8,7 @@ import cors from 'cors'
 
 connectionWithMongoose();
 app.use(cors({
-  origin:['http://localhost:5173']
+  origin:['https://question-bank-2.onrender.com']
 }));
  
 //middle ware
