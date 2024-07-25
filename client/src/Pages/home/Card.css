@@ -1,0 +1,67 @@
+/* Card.css */
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2px ;
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.topic {
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: #6f6f6f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.question {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+  -webkit-box-orient:vertical ;
+  overflow: hidden;
+  text-overflow: hidden;
+  -webkit-line-clamp: 2;  
+}
+
+.answer {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient:vertical ;
+  overflow: hidden;
+  text-overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .topic {
+    font-size: 1.4rem;
+  }
+
+  .question {
+    font-size: 1.1rem;
+  }
+
+  .answer {
+    font-size: 0.9rem;
+  }
+}
